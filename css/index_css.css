@@ -1,0 +1,75 @@
+/* CSS Document */
+
+/* General */
+body {
+  padding: 0;
+  margin: 0;
+  background-color:#03001B;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.no-select {
+  /* adapted from: StackOverflow: 'Anyway to prevent the Blue highlighting of 
+  elements in Chrome when clicking quickly?' <https://stackoverflow.com/questions/21003535/anyway-to-prevent-the-blue-highlighting-of-elements-in-chrome-when-clicking-quic>.
+  6/9/17. */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+  pointer-events: none;
+}
+.disappear {
+  display: none;
+}
+
+/* UI */
+#f-indicator {
+  z-index:999;
+  width: 42px;
+  height: 45px;
+  position: absolute;
+  visibility: hidden;
+}
+
+/* Card */
+.playing-card-box {
+  position:absolute;
+  width:0px;
+  height:0px;
+}
+.playing-card {
+  position:absolute;
+  z-index: 1;
+  width:150px; height:209.5px;
+}
+.playing-card-flipped {
+  position:absolute;
+  z-index: 0;
+  width:150px; height:209.5px;
+}
+
+/* Board */
+#board-boundaries {
+  position:relative;
+  margin:auto;
+  width:1500px; height:750px;
+  
+  top: calc(50vh - 375px);
+  
+  background-color:#b14622;
+}
+#board-surface {
+  position:absolute;
+  left:75px;
+  top:75px;
+  width:1350px; height:600px;
+  background-color:#c0714a;
+}
+#board-boundary-shadow {
+  z-index: 900;
+  position: relative;
+}

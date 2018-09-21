@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Monsterpedia</title>
+    <link rel="icon" href="img/ghost-cropped.gif" type="image/gif">
+    <link rel="stylesheet" type="text/css" href="css/index_css.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="plugins/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="js/index_js.js"></script>
+  </head>
+  <body>
+    <!-- sound -->
+    <audio src="audio/card-hit.mp3" preload="auto" class="disappear" id="card-hit"></audio>
+    <audio src="audio/card-flip.mp3" preload="auto" class="disappear" id="card-flip"></audio>
+    <audio src="audio/card-woosh.mp3" preload="auto" class="disappear" id="card-woosh"></audio>
+    <!-- ui -->
+    <img src="img/interaction-indicator.png" alt="F/E" class="no-select" id="f-indicator"/>
+    <!-- board -->
+    <div id="board-boundaries">
+      <div id="board-surface">
+        <img src="img/board-boundary-shadow.png" alt="Board shadow" class="no-select" id="board-boundary-shadow"/>
+      </div>
+    </div>  
+  </body>
+</html>
