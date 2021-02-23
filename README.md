@@ -2,7 +2,9 @@
 
 This is a small JavaScript toy I made in 2017 for a school assignment. It simulates the movement and feedback of several monster-themed playing cards on a table.
 
-A small demonstration: ![Demonstration gif](/img/demonstration.gif)
+A small demonstration: 
+
+![Demonstration gif](/img/demonstration.gif)
 
 ## Sources:
 
